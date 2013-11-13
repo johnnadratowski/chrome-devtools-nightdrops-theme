@@ -1,6 +1,10 @@
-chrome-devtools-nightdrops-theme
-================================
+# Nightdrops theme
 
+##for the chrome devtools.
+
+Based on [IR_Black Skin by Ben Truyman](https://gist.github.com/bentruyman/1150520)
+
+###How to use
 
 To use it you have to put the Custom.css in
 
