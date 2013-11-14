@@ -1,8 +1,5 @@
 /**********************************************/
-/* nightdrops by kajyr - 2013
-/* https://github.com/kajyr/chrome-devtools-nightdrops-theme
 /*
-/* Based on:
 /* IR_Black Skin by Ben Truyman - 2011
 /*
 /* Based on Todd Werth's IR_Black:
@@ -20,10 +17,11 @@
 /**********************************************/
   /* Messages
   /**********************************************/
-$lightblue: #96cbfe;
-$avio: #5D8AA8;
-$dark-grey: #7c7c7c;
-$aqua: #18909A;
+  $lightblue: #96cbfe;
+  $avio: #5D8AA8;
+  $dark-grey: #7c7c7c;
+  $aqua: #18909A;
+  $orange: #ffd2a7;
 
 
   #console-messages {
@@ -40,17 +38,17 @@ $aqua: #18909A;
   }
   
   #console-messages .console-message, .console-user-command  {
-  		color: #f1f1f1 !important;
-  		border: none !important;
-  	}
+  	color: #f1f1f1 !important;
+  	border: none !important;
+  }
 
   .console-user-command-result {
-  		border: none !important;
-  	}
+  	border: none !important;
+  }
 
-  	.console-debug-level .console-message-text  {
-		color: $avio !important;
-  	}
+  .console-debug-level .console-message-text  {
+  	color: $avio !important;
+  }
 
   .console-user-command {
   	border: none !important;
@@ -61,28 +59,35 @@ $aqua: #18909A;
   }
   
   #console-messages .console-user-command > .console-message-text {
-  	color: #ffd2a7 !important;
+  	color: $orange !important;
   }
   
-  #console-messages .console-formatted-number {
-  	color: #ff73fd !important;
+  #console-messages {
+  	.console-formatted-number {
+  		color: $aqua !important;
+  	}
+  	.console-formatted-string {
+  		color: #a8ff60 !important;
+  	}
+  	.console-formatted-boolean {
+  		color: $orange !important;
+  	}
+  	.console-formatted-object {
+  		color: $dark-grey !important;
+
+  		.name {
+  			color: $lightblue !important;
+  		}
+  	}
+  	.console-formatted-function {
+  		color: #fff !important;
+  	}
+  	.console-formatted-regexp {
+  		color: #e9c062 !important;
+  	}
   }
   
-  #console-messages .console-formatted-string {
-  	color: #a8ff60 !important;
-  }
-  
-  #console-messages .console-formatted-object {
-  	color: $dark-grey !important;
-  }
-  
-  #console-messages .console-formatted-function {
-  	color: #fff !important;
-  }
-  
-  #console-messages .console-formatted-regexp {
-  	color: #e9c062 !important;
-  }
+
   
   #console-messages .console-group-messages .section .header .title {
   	color: #f1f1f1 !important;
@@ -214,7 +219,7 @@ $aqua: #18909A;
   #elements-content .webkit-html-attribute-name,
   #network-views .webkit-html-attribute-name,
   #script-resource-views .webkit-html-attribute-name {
-  	color: #ffd2a7 !important;
+  	color: $orange !important;
   }
   
   #storage-views .webkit-html-attribute-value,
@@ -391,34 +396,34 @@ $aqua: #18909A;
   	color: $avio !important;
   }
 
-.sidebar-separator {
-	background-color: #222 !important;
-	border-top: none !important;
-	color: white !important;
-	padding-top: 10px !important;
-	padding-bottom: 10px !important;
-	border-bottom: 1px solid $dark-grey !important;
-}
+  .sidebar-separator {
+  	background-color: #222 !important;
+  	border-top: none !important;
+  	color: white !important;
+  	padding-top: 10px !important;
+  	padding-bottom: 10px !important;
+  	border-bottom: 1px solid $dark-grey !important;
+  }
 
-.styles-section {
-	&:not(.first-styles-section) {
-		border: none !important;
-	}
-	
-	&:hover {
-		background-color: #333;
-	}
-}
+  .styles-section {
+  	&:not(.first-styles-section) {
+  		border: none !important;
+  	}
+
+  	&:hover {
+  		background-color: #333;
+  	}
+  }
 
 
-::-webkit-scrollbar {
-   height: 10px;
-	width: 10px;
-	background: #222;
-}
-::-webkit-scrollbar-thumb {
-    background: $avio;
-}
-::-webkit-scrollbar-corner {
-    background: #000;
-}
+  ::-webkit-scrollbar {
+  	height: 10px;
+  	width: 10px;
+  	background: #222;
+  }
+  ::-webkit-scrollbar-thumb {
+  	background: $avio;
+  }
+  ::-webkit-scrollbar-corner {
+  	background: #000;
+  }

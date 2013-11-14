@@ -33,14 +33,12 @@
 
 #console-messages .console-user-command > .console-message-text { color: #ffd2a7 !important; }
 
-#console-messages .console-formatted-number { color: #ff73fd !important; }
-
+#console-messages .console-formatted-number { color: #18909a !important; }
 #console-messages .console-formatted-string { color: #a8ff60 !important; }
-
+#console-messages .console-formatted-boolean { color: #ffd2a7 !important; }
 #console-messages .console-formatted-object { color: #7c7c7c !important; }
-
+#console-messages .console-formatted-object .name { color: #96cbfe !important; }
 #console-messages .console-formatted-function { color: white !important; }
-
 #console-messages .console-formatted-regexp { color: #e9c062 !important; }
 
 #console-messages .console-group-messages .section .header .title { color: #f1f1f1 !important; }
